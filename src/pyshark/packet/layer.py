@@ -14,6 +14,7 @@ class Layer(Pickleable):
 
     def __init__(self, xml_obj=None, raw_mode=False):
         self.raw_mode = raw_mode
+        self.xml_obj = xml_obj
 
         self._layer_name = xml_obj.attrib['name']
         self._all_fields = {}
